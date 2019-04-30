@@ -1,0 +1,11 @@
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/Debug/netcoreapp2.2/FrequencyCalculator.deps.json
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/Debug/netcoreapp2.2/FrequencyCalculator.runtimeconfig.json
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/Debug/netcoreapp2.2/FrequencyCalculator.runtimeconfig.dev.json
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/Debug/netcoreapp2.2/FrequencyCalculator.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/Debug/netcoreapp2.2/FrequencyCalculator.pdb
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/obj/Debug/netcoreapp2.2/FrequencyCalculator.csprojAssemblyReference.cache
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/obj/Debug/netcoreapp2.2/FrequencyCalculator.csproj.CoreCompileInputs.cache
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/obj/Debug/netcoreapp2.2/FrequencyCalculator.AssemblyInfoInputs.cache
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/obj/Debug/netcoreapp2.2/FrequencyCalculator.AssemblyInfo.cs
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/obj/Debug/netcoreapp2.2/FrequencyCalculator.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/obj/Debug/netcoreapp2.2/FrequencyCalculator.pdb

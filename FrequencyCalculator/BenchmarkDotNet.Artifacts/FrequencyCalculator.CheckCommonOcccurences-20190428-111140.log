@@ -1,0 +1,431 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/release/netcoreapp2.2/ecc88908-4a86-46d8-8837-15047f984701
+// command took 1.85s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/release/netcoreapp2.2/ecc88908-4a86-46d8-8837-15047f984701
+// command took 4.12s and exited with 0
+// ***** Done, took 00:00:06 (6.14 sec)   *****
+// Found 4 benchmarks:
+//   CheckCommonOcccurences.BmGetMostCommonViaLinq: DefaultJob
+//   CheckCommonOcccurences.BmGetMostCommonViaDic: DefaultJob
+//   CheckCommonOcccurences.BmGetMostCommonViaDoubleLoop: DefaultJob
+//   CheckCommonOcccurences.BmGetMostCommonViaSubLoopDic: DefaultJob
+
+// **************************
+// Benchmark: CheckCommonOcccurences.BmGetMostCommonViaLinq: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ecc88908-4a86-46d8-8837-15047f984701.dll" --benchmarkName "FrequencyCalculator.CheckCommonOcccurences.BmGetMostCommonViaLinq" --job "Default" --benchmarkId 0 in /Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/release/netcoreapp2.2/ecc88908-4a86-46d8-8837-15047f984701/bin/Release/netcoreapp2.2
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 358486.00 ns, 358.4860 us/op
+WorkloadJitting  1: 1 op, 26388448.00 ns, 26.3884 ms/op
+
+OverheadJitting  2: 16 op, 291361.00 ns, 18.2101 us/op
+WorkloadJitting  2: 16 op, 180754699.00 ns, 11.2972 ms/op
+
+WorkloadPilot    1: 16 op, 172156023.00 ns, 10.7598 ms/op
+WorkloadPilot    2: 32 op, 356722876.00 ns, 11.1476 ms/op
+WorkloadPilot    3: 64 op, 660886772.00 ns, 10.3264 ms/op
+
+OverheadWarmup   1: 64 op, 3191.00 ns, 49.8594 ns/op
+OverheadWarmup   2: 64 op, 946.00 ns, 14.7813 ns/op
+OverheadWarmup   3: 64 op, 1212.00 ns, 18.9375 ns/op
+OverheadWarmup   4: 64 op, 644.00 ns, 10.0625 ns/op
+OverheadWarmup   5: 64 op, 621.00 ns, 9.7031 ns/op
+OverheadWarmup   6: 64 op, 681.00 ns, 10.6406 ns/op
+OverheadWarmup   7: 64 op, 600.00 ns, 9.3750 ns/op
+
+OverheadActual   1: 64 op, 656.00 ns, 10.2500 ns/op
+OverheadActual   2: 64 op, 665.00 ns, 10.3906 ns/op
+OverheadActual   3: 64 op, 838.00 ns, 13.0938 ns/op
+OverheadActual   4: 64 op, 3309.00 ns, 51.7031 ns/op
+OverheadActual   5: 64 op, 656.00 ns, 10.2500 ns/op
+OverheadActual   6: 64 op, 647.00 ns, 10.1094 ns/op
+OverheadActual   7: 64 op, 504.00 ns, 7.8750 ns/op
+OverheadActual   8: 64 op, 501.00 ns, 7.8281 ns/op
+OverheadActual   9: 64 op, 658.00 ns, 10.2813 ns/op
+OverheadActual  10: 64 op, 709.00 ns, 11.0781 ns/op
+OverheadActual  11: 64 op, 705.00 ns, 11.0156 ns/op
+OverheadActual  12: 64 op, 547.00 ns, 8.5469 ns/op
+OverheadActual  13: 64 op, 504.00 ns, 7.8750 ns/op
+OverheadActual  14: 64 op, 464.00 ns, 7.2500 ns/op
+OverheadActual  15: 64 op, 484.00 ns, 7.5625 ns/op
+OverheadActual  16: 64 op, 710.00 ns, 11.0938 ns/op
+OverheadActual  17: 64 op, 555.00 ns, 8.6719 ns/op
+OverheadActual  18: 64 op, 652.00 ns, 10.1875 ns/op
+OverheadActual  19: 64 op, 659.00 ns, 10.2969 ns/op
+OverheadActual  20: 64 op, 442.00 ns, 6.9063 ns/op
+
+WorkloadWarmup   1: 64 op, 643396815.00 ns, 10.0531 ms/op
+WorkloadWarmup   2: 64 op, 643596526.00 ns, 10.0562 ms/op
+WorkloadWarmup   3: 64 op, 657153629.00 ns, 10.2680 ms/op
+WorkloadWarmup   4: 64 op, 664287969.00 ns, 10.3795 ms/op
+WorkloadWarmup   5: 64 op, 676678442.00 ns, 10.5731 ms/op
+WorkloadWarmup   6: 64 op, 649924767.00 ns, 10.1551 ms/op
+WorkloadWarmup   7: 64 op, 642971700.00 ns, 10.0464 ms/op
+WorkloadWarmup   8: 64 op, 652437962.00 ns, 10.1943 ms/op
+WorkloadWarmup   9: 64 op, 685569111.00 ns, 10.7120 ms/op
+WorkloadWarmup  10: 64 op, 654072296.00 ns, 10.2199 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 650479472.00 ns, 10.1637 ms/op
+WorkloadActual   2: 64 op, 640172339.00 ns, 10.0027 ms/op
+WorkloadActual   3: 64 op, 661817495.00 ns, 10.3409 ms/op
+WorkloadActual   4: 64 op, 670330533.00 ns, 10.4739 ms/op
+WorkloadActual   5: 64 op, 638127388.00 ns, 9.9707 ms/op
+WorkloadActual   6: 64 op, 660820417.00 ns, 10.3253 ms/op
+WorkloadActual   7: 64 op, 667542488.00 ns, 10.4304 ms/op
+WorkloadActual   8: 64 op, 687834169.00 ns, 10.7474 ms/op
+WorkloadActual   9: 64 op, 658289827.00 ns, 10.2858 ms/op
+WorkloadActual  10: 64 op, 665648868.00 ns, 10.4008 ms/op
+WorkloadActual  11: 64 op, 633783137.00 ns, 9.9029 ms/op
+WorkloadActual  12: 64 op, 668941199.00 ns, 10.4522 ms/op
+WorkloadActual  13: 64 op, 667621890.00 ns, 10.4316 ms/op
+WorkloadActual  14: 64 op, 663990785.00 ns, 10.3749 ms/op
+WorkloadActual  15: 64 op, 658429289.00 ns, 10.2880 ms/op
+WorkloadActual  16: 64 op, 691213496.00 ns, 10.8002 ms/op
+WorkloadActual  17: 64 op, 645558330.00 ns, 10.0868 ms/op
+WorkloadActual  18: 64 op, 650063283.00 ns, 10.1572 ms/op
+WorkloadActual  19: 64 op, 649844330.00 ns, 10.1538 ms/op
+WorkloadActual  20: 64 op, 680715167.00 ns, 10.6362 ms/op
+WorkloadActual  21: 64 op, 659061672.00 ns, 10.2978 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 650478818.00 ns, 10.1637 ms/op
+WorkloadResult   2: 64 op, 640171685.00 ns, 10.0027 ms/op
+WorkloadResult   3: 64 op, 661816841.00 ns, 10.3409 ms/op
+WorkloadResult   4: 64 op, 670329879.00 ns, 10.4739 ms/op
+WorkloadResult   5: 64 op, 638126734.00 ns, 9.9707 ms/op
+WorkloadResult   6: 64 op, 660819763.00 ns, 10.3253 ms/op
+WorkloadResult   7: 64 op, 667541834.00 ns, 10.4303 ms/op
+WorkloadResult   8: 64 op, 687833515.00 ns, 10.7474 ms/op
+WorkloadResult   9: 64 op, 658289173.00 ns, 10.2858 ms/op
+WorkloadResult  10: 64 op, 665648214.00 ns, 10.4008 ms/op
+WorkloadResult  11: 64 op, 633782483.00 ns, 9.9029 ms/op
+WorkloadResult  12: 64 op, 668940545.00 ns, 10.4522 ms/op
+WorkloadResult  13: 64 op, 667621236.00 ns, 10.4316 ms/op
+WorkloadResult  14: 64 op, 663990131.00 ns, 10.3748 ms/op
+WorkloadResult  15: 64 op, 658428635.00 ns, 10.2879 ms/op
+WorkloadResult  16: 64 op, 691212842.00 ns, 10.8002 ms/op
+WorkloadResult  17: 64 op, 645557676.00 ns, 10.0868 ms/op
+WorkloadResult  18: 64 op, 650062629.00 ns, 10.1572 ms/op
+WorkloadResult  19: 64 op, 649843676.00 ns, 10.1538 ms/op
+WorkloadResult  20: 64 op, 680714513.00 ns, 10.6362 ms/op
+WorkloadResult  21: 64 op, 659061018.00 ns, 10.2978 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 10.3201 ms, StdErr = 0.0517 ms (0.50%); N = 21, StdDev = 0.2368 ms
+Min = 9.9029 ms, Q1 = 10.1555 ms, Median = 10.3253 ms, Q3 = 10.4419 ms, Max = 10.8002 ms
+IQR = 0.2864 ms, LowerFence = 9.7260 ms, UpperFence = 10.8714 ms
+ConfidenceInterval = [10.1212 ms; 10.5190 ms] (CI 99.9%), Margin = 0.1989 ms (1.93% of Mean)
+Skewness = 0.2, Kurtosis = 2.39, MValue = 2
+
+// **************************
+// Benchmark: CheckCommonOcccurences.BmGetMostCommonViaDic: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ecc88908-4a86-46d8-8837-15047f984701.dll" --benchmarkName "FrequencyCalculator.CheckCommonOcccurences.BmGetMostCommonViaDic" --job "Default" --benchmarkId 1 in /Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/release/netcoreapp2.2/ecc88908-4a86-46d8-8837-15047f984701/bin/Release/netcoreapp2.2
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 314372.00 ns, 314.3720 us/op
+WorkloadJitting  1: 1 op, 1118955734.00 ns, 1.1190 s/op
+
+WorkloadWarmup   1: 1 op, 1033804570.00 ns, 1.0338 s/op
+WorkloadWarmup   2: 1 op, 1014745021.00 ns, 1.0147 s/op
+WorkloadWarmup   3: 1 op, 1065756608.00 ns, 1.0658 s/op
+WorkloadWarmup   4: 1 op, 1037176151.00 ns, 1.0372 s/op
+WorkloadWarmup   5: 1 op, 1019964621.00 ns, 1.0200 s/op
+WorkloadWarmup   6: 1 op, 1022403151.00 ns, 1.0224 s/op
+WorkloadWarmup   7: 1 op, 1025647493.00 ns, 1.0256 s/op
+WorkloadWarmup   8: 1 op, 1038285616.00 ns, 1.0383 s/op
+WorkloadWarmup   9: 1 op, 1008556304.00 ns, 1.0086 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1015609221.00 ns, 1.0156 s/op
+WorkloadActual   2: 1 op, 1023666262.00 ns, 1.0237 s/op
+WorkloadActual   3: 1 op, 1031311681.00 ns, 1.0313 s/op
+WorkloadActual   4: 1 op, 1032026142.00 ns, 1.0320 s/op
+WorkloadActual   5: 1 op, 1070883620.00 ns, 1.0709 s/op
+WorkloadActual   6: 1 op, 1055187381.00 ns, 1.0552 s/op
+WorkloadActual   7: 1 op, 1032817401.00 ns, 1.0328 s/op
+WorkloadActual   8: 1 op, 1033434830.00 ns, 1.0334 s/op
+WorkloadActual   9: 1 op, 1055114628.00 ns, 1.0551 s/op
+WorkloadActual  10: 1 op, 1032188128.00 ns, 1.0322 s/op
+WorkloadActual  11: 1 op, 1039638882.00 ns, 1.0396 s/op
+WorkloadActual  12: 1 op, 1049476077.00 ns, 1.0495 s/op
+WorkloadActual  13: 1 op, 1032978031.00 ns, 1.0330 s/op
+WorkloadActual  14: 1 op, 1055040333.00 ns, 1.0550 s/op
+WorkloadActual  15: 1 op, 1010016071.00 ns, 1.0100 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1015609221.00 ns, 1.0156 s/op
+WorkloadResult   2: 1 op, 1023666262.00 ns, 1.0237 s/op
+WorkloadResult   3: 1 op, 1031311681.00 ns, 1.0313 s/op
+WorkloadResult   4: 1 op, 1032026142.00 ns, 1.0320 s/op
+WorkloadResult   5: 1 op, 1070883620.00 ns, 1.0709 s/op
+WorkloadResult   6: 1 op, 1055187381.00 ns, 1.0552 s/op
+WorkloadResult   7: 1 op, 1032817401.00 ns, 1.0328 s/op
+WorkloadResult   8: 1 op, 1033434830.00 ns, 1.0334 s/op
+WorkloadResult   9: 1 op, 1055114628.00 ns, 1.0551 s/op
+WorkloadResult  10: 1 op, 1032188128.00 ns, 1.0322 s/op
+WorkloadResult  11: 1 op, 1039638882.00 ns, 1.0396 s/op
+WorkloadResult  12: 1 op, 1049476077.00 ns, 1.0495 s/op
+WorkloadResult  13: 1 op, 1032978031.00 ns, 1.0330 s/op
+WorkloadResult  14: 1 op, 1055040333.00 ns, 1.0550 s/op
+WorkloadResult  15: 1 op, 1010016071.00 ns, 1.0100 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 1.0380 s, StdErr = 0.0042 s (0.41%); N = 15, StdDev = 0.0164 s
+Min = 1.0100 s, Q1 = 1.0313 s, Median = 1.0330 s, Q3 = 1.0550 s, Max = 1.0709 s
+IQR = 0.0237 s, LowerFence = 0.9957 s, UpperFence = 1.0906 s
+ConfidenceInterval = [1.0204 s; 1.0555 s] (CI 99.9%), Margin = 0.0175 s (1.69% of Mean)
+Skewness = 0.23, Kurtosis = 2.17, MValue = 2
+
+// **************************
+// Benchmark: CheckCommonOcccurences.BmGetMostCommonViaDoubleLoop: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ecc88908-4a86-46d8-8837-15047f984701.dll" --benchmarkName "FrequencyCalculator.CheckCommonOcccurences.BmGetMostCommonViaDoubleLoop" --job "Default" --benchmarkId 2 in /Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/release/netcoreapp2.2/ecc88908-4a86-46d8-8837-15047f984701/bin/Release/netcoreapp2.2
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 316936.00 ns, 316.9360 us/op
+WorkloadJitting  1: 1 op, 2910947341.00 ns, 2.9109 s/op
+
+WorkloadWarmup   1: 1 op, 2892811708.00 ns, 2.8928 s/op
+WorkloadWarmup   2: 1 op, 2864618110.00 ns, 2.8646 s/op
+WorkloadWarmup   3: 1 op, 2891278293.00 ns, 2.8913 s/op
+WorkloadWarmup   4: 1 op, 2933123947.00 ns, 2.9331 s/op
+WorkloadWarmup   5: 1 op, 2927476773.00 ns, 2.9275 s/op
+WorkloadWarmup   6: 1 op, 2928306847.00 ns, 2.9283 s/op
+WorkloadWarmup   7: 1 op, 2893059876.00 ns, 2.8931 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2871260330.00 ns, 2.8713 s/op
+WorkloadActual   2: 1 op, 2865988776.00 ns, 2.8660 s/op
+WorkloadActual   3: 1 op, 2819468449.00 ns, 2.8195 s/op
+WorkloadActual   4: 1 op, 2870946798.00 ns, 2.8709 s/op
+WorkloadActual   5: 1 op, 2808339937.00 ns, 2.8083 s/op
+WorkloadActual   6: 1 op, 2907358590.00 ns, 2.9074 s/op
+WorkloadActual   7: 1 op, 3229311724.00 ns, 3.2293 s/op
+WorkloadActual   8: 1 op, 2899795022.00 ns, 2.8998 s/op
+WorkloadActual   9: 1 op, 2848990701.00 ns, 2.8490 s/op
+WorkloadActual  10: 1 op, 2927160620.00 ns, 2.9272 s/op
+WorkloadActual  11: 1 op, 2974738659.00 ns, 2.9747 s/op
+WorkloadActual  12: 1 op, 3086671125.00 ns, 3.0867 s/op
+WorkloadActual  13: 1 op, 3182776367.00 ns, 3.1828 s/op
+WorkloadActual  14: 1 op, 2883117103.00 ns, 2.8831 s/op
+WorkloadActual  15: 1 op, 2869703046.00 ns, 2.8697 s/op
+WorkloadActual  16: 1 op, 2839817791.00 ns, 2.8398 s/op
+WorkloadActual  17: 1 op, 2826445232.00 ns, 2.8264 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2871260330.00 ns, 2.8713 s/op
+WorkloadResult   2: 1 op, 2865988776.00 ns, 2.8660 s/op
+WorkloadResult   3: 1 op, 2819468449.00 ns, 2.8195 s/op
+WorkloadResult   4: 1 op, 2870946798.00 ns, 2.8709 s/op
+WorkloadResult   5: 1 op, 2808339937.00 ns, 2.8083 s/op
+WorkloadResult   6: 1 op, 2907358590.00 ns, 2.9074 s/op
+WorkloadResult   7: 1 op, 2899795022.00 ns, 2.8998 s/op
+WorkloadResult   8: 1 op, 2848990701.00 ns, 2.8490 s/op
+WorkloadResult   9: 1 op, 2927160620.00 ns, 2.9272 s/op
+WorkloadResult  10: 1 op, 2974738659.00 ns, 2.9747 s/op
+WorkloadResult  11: 1 op, 3086671125.00 ns, 3.0867 s/op
+WorkloadResult  12: 1 op, 2883117103.00 ns, 2.8831 s/op
+WorkloadResult  13: 1 op, 2869703046.00 ns, 2.8697 s/op
+WorkloadResult  14: 1 op, 2839817791.00 ns, 2.8398 s/op
+WorkloadResult  15: 1 op, 2826445232.00 ns, 2.8264 s/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 2.8867 s, StdErr = 0.0181 s (0.63%); N = 15, StdDev = 0.0703 s
+Min = 2.8083 s, Q1 = 2.8398 s, Median = 2.8709 s, Q3 = 2.9074 s, Max = 3.0867 s
+IQR = 0.0675 s, LowerFence = 2.7385 s, UpperFence = 3.0087 s
+ConfidenceInterval = [2.8115 s; 2.9618 s] (CI 99.9%), Margin = 0.0751 s (2.60% of Mean)
+Skewness = 1.46, Kurtosis = 4.77, MValue = 2
+
+// **************************
+// Benchmark: CheckCommonOcccurences.BmGetMostCommonViaSubLoopDic: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ecc88908-4a86-46d8-8837-15047f984701.dll" --benchmarkName "FrequencyCalculator.CheckCommonOcccurences.BmGetMostCommonViaSubLoopDic" --job "Default" --benchmarkId 3 in /Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator/bin/release/netcoreapp2.2/ecc88908-4a86-46d8-8837-15047f984701/bin/Release/netcoreapp2.2
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 318668.00 ns, 318.6680 us/op
+WorkloadJitting  1: 1 op, 285496839.00 ns, 285.4968 ms/op
+
+WorkloadPilot    1: 2 op, 560280155.00 ns, 280.1401 ms/op
+
+WorkloadWarmup   1: 2 op, 568707213.00 ns, 284.3536 ms/op
+WorkloadWarmup   2: 2 op, 562661729.00 ns, 281.3309 ms/op
+WorkloadWarmup   3: 2 op, 553563920.00 ns, 276.7820 ms/op
+WorkloadWarmup   4: 2 op, 569357263.00 ns, 284.6786 ms/op
+WorkloadWarmup   5: 2 op, 552772225.00 ns, 276.3861 ms/op
+WorkloadWarmup   6: 2 op, 585676026.00 ns, 292.8380 ms/op
+WorkloadWarmup   7: 2 op, 594171617.00 ns, 297.0858 ms/op
+WorkloadWarmup   8: 2 op, 566807610.00 ns, 283.4038 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 2 op, 569500719.00 ns, 284.7504 ms/op
+WorkloadActual   2: 2 op, 552635563.00 ns, 276.3178 ms/op
+WorkloadActual   3: 2 op, 557013172.00 ns, 278.5066 ms/op
+WorkloadActual   4: 2 op, 554143671.00 ns, 277.0718 ms/op
+WorkloadActual   5: 2 op, 567414885.00 ns, 283.7074 ms/op
+WorkloadActual   6: 2 op, 561222428.00 ns, 280.6112 ms/op
+WorkloadActual   7: 2 op, 556668324.00 ns, 278.3342 ms/op
+WorkloadActual   8: 2 op, 562684954.00 ns, 281.3425 ms/op
+WorkloadActual   9: 2 op, 608341678.00 ns, 304.1708 ms/op
+WorkloadActual  10: 2 op, 557785881.00 ns, 278.8929 ms/op
+WorkloadActual  11: 2 op, 551550411.00 ns, 275.7752 ms/op
+WorkloadActual  12: 2 op, 560423797.00 ns, 280.2119 ms/op
+WorkloadActual  13: 2 op, 553137963.00 ns, 276.5690 ms/op
+WorkloadActual  14: 2 op, 555515716.00 ns, 277.7579 ms/op
+WorkloadActual  15: 2 op, 569212420.00 ns, 284.6062 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 2 op, 569500719.00 ns, 284.7504 ms/op
+WorkloadResult   2: 2 op, 552635563.00 ns, 276.3178 ms/op
+WorkloadResult   3: 2 op, 557013172.00 ns, 278.5066 ms/op
+WorkloadResult   4: 2 op, 554143671.00 ns, 277.0718 ms/op
+WorkloadResult   5: 2 op, 567414885.00 ns, 283.7074 ms/op
+WorkloadResult   6: 2 op, 561222428.00 ns, 280.6112 ms/op
+WorkloadResult   7: 2 op, 556668324.00 ns, 278.3342 ms/op
+WorkloadResult   8: 2 op, 562684954.00 ns, 281.3425 ms/op
+WorkloadResult   9: 2 op, 557785881.00 ns, 278.8929 ms/op
+WorkloadResult  10: 2 op, 551550411.00 ns, 275.7752 ms/op
+WorkloadResult  11: 2 op, 560423797.00 ns, 280.2119 ms/op
+WorkloadResult  12: 2 op, 553137963.00 ns, 276.5690 ms/op
+WorkloadResult  13: 2 op, 555515716.00 ns, 277.7579 ms/op
+WorkloadResult  14: 2 op, 569212420.00 ns, 284.6062 ms/op
+GC:  0 0 0 0 0
+
+// AfterAll
+
+Mean = 279.6039 ms, StdErr = 0.8139 ms (0.29%); N = 14, StdDev = 3.0454 ms
+Min = 275.7752 ms, Q1 = 277.0718 ms, Median = 278.6998 ms, Q3 = 281.3425 ms, Max = 284.7504 ms
+IQR = 4.2706 ms, LowerFence = 270.6659 ms, UpperFence = 287.7484 ms
+ConfidenceInterval = [276.1686 ms; 283.0393 ms] (CI 99.9%), Margin = 3.4354 ms (1.23% of Mean)
+Skewness = 0.48, Kurtosis = 1.74, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/FrequencyCalculator.CheckCommonOcccurences-report.csv
+  BenchmarkDotNet.Artifacts/results/FrequencyCalculator.CheckCommonOcccurences-report-github.md
+  BenchmarkDotNet.Artifacts/results/FrequencyCalculator.CheckCommonOcccurences-report.html
+
+// * Detailed results *
+CheckCommonOcccurences.BmGetMostCommonViaLinq: DefaultJob
+Runtime = .NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 10.3201 ms, StdErr = 0.0517 ms (0.50%); N = 21, StdDev = 0.2368 ms
+Min = 9.9029 ms, Q1 = 10.1555 ms, Median = 10.3253 ms, Q3 = 10.4419 ms, Max = 10.8002 ms
+IQR = 0.2864 ms, LowerFence = 9.7260 ms, UpperFence = 10.8714 ms
+ConfidenceInterval = [10.1212 ms; 10.5190 ms] (CI 99.9%), Margin = 0.1989 ms (1.93% of Mean)
+Skewness = 0.2, Kurtosis = 2.39, MValue = 2
+-------------------- Histogram --------------------
+[ 9.828 ms ; 10.227 ms) | @@@@@@@
+[10.227 ms ; 10.462 ms) | @@@@@@@@@@
+[10.462 ms ; 10.875 ms) | @@@@
+---------------------------------------------------
+
+CheckCommonOcccurences.BmGetMostCommonViaDic: DefaultJob
+Runtime = .NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 1.0380 s, StdErr = 0.0042 s (0.41%); N = 15, StdDev = 0.0164 s
+Min = 1.0100 s, Q1 = 1.0313 s, Median = 1.0330 s, Q3 = 1.0550 s, Max = 1.0709 s
+IQR = 0.0237 s, LowerFence = 0.9957 s, UpperFence = 1.0906 s
+ConfidenceInterval = [1.0204 s; 1.0555 s] (CI 99.9%), Margin = 0.0175 s (1.69% of Mean)
+Skewness = 0.23, Kurtosis = 2.17, MValue = 2
+-------------------- Histogram --------------------
+[1.004 s ; 1.025 s) | @@@
+[1.025 s ; 1.077 s) | @@@@@@@@@@@@
+---------------------------------------------------
+
+CheckCommonOcccurences.BmGetMostCommonViaDoubleLoop: DefaultJob
+Runtime = .NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 2.8867 s, StdErr = 0.0181 s (0.63%); N = 15, StdDev = 0.0703 s
+Min = 2.8083 s, Q1 = 2.8398 s, Median = 2.8709 s, Q3 = 2.9074 s, Max = 3.0867 s
+IQR = 0.0675 s, LowerFence = 2.7385 s, UpperFence = 3.0087 s
+ConfidenceInterval = [2.8115 s; 2.9618 s] (CI 99.9%), Margin = 0.0751 s (2.60% of Mean)
+Skewness = 1.46, Kurtosis = 4.77, MValue = 2
+-------------------- Histogram --------------------
+[2.800 s ; 2.858 s) | @@@@@
+[2.858 s ; 2.921 s) | @@@@@@@
+[2.921 s ; 3.030 s) | @@
+[3.030 s ; 3.112 s) | @
+---------------------------------------------------
+
+CheckCommonOcccurences.BmGetMostCommonViaSubLoopDic: DefaultJob
+Runtime = .NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT; GC = Concurrent Workstation
+Mean = 279.6039 ms, StdErr = 0.8139 ms (0.29%); N = 14, StdDev = 3.0454 ms
+Min = 275.7752 ms, Q1 = 277.0718 ms, Median = 278.6998 ms, Q3 = 281.3425 ms, Max = 284.7504 ms
+IQR = 4.2706 ms, LowerFence = 270.6659 ms, UpperFence = 287.7484 ms
+ConfidenceInterval = [276.1686 ms; 283.0393 ms] (CI 99.9%), Margin = 3.4354 ms (1.23% of Mean)
+Skewness = 0.48, Kurtosis = 1.74, MValue = 2
+-------------------- Histogram --------------------
+[274.670 ms ; 285.856 ms) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.11.5, OS=macOS Sierra 10.12.6 (16G1815) [Darwin 16.7.0]
+Intel Core i5-7360U CPU 2.30GHz (Kaby Lake), 1 CPU, 4 logical and 2 physical cores
+.NET Core SDK=2.2.106
+  [Host]     : .NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT
+  DefaultJob : .NET Core 2.2.4 (CoreCLR 4.6.27521.02, CoreFX 4.6.27521.01), 64bit RyuJIT
+
+
+|                       Method |        Mean |      Error |     StdDev |
+|----------------------------- |------------:|-----------:|-----------:|
+|       BmGetMostCommonViaLinq |    10.32 ms |  0.1989 ms |  0.2368 ms |
+|        BmGetMostCommonViaDic | 1,037.96 ms | 17.5465 ms | 16.4130 ms |
+| BmGetMostCommonViaDoubleLoop | 2,886.65 ms | 75.1080 ms | 70.2560 ms |
+| BmGetMostCommonViaSubLoopDic |   279.60 ms |  3.4354 ms |  3.0454 ms |
+
+// * Hints *
+Outliers
+  CheckCommonOcccurences.BmGetMostCommonViaDoubleLoop: Default -> 2 outliers were removed (3.18 s, 3.23 s)
+  CheckCommonOcccurences.BmGetMostCommonViaSubLoopDic: Default -> 1 outlier  was  removed (304.17 ms)
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ms   : 1 Millisecond (0.001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:02:17 (137.02 sec), executed benchmarks: 4
+
+Global total time: 00:02:23 (143.18 sec), executed benchmarks: 4
+// * Artifacts cleanup *

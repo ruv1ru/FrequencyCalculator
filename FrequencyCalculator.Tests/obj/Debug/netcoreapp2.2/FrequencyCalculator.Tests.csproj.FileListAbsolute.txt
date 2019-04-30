@@ -1,0 +1,17 @@
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.csprojAssemblyReference.cache
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.csproj.CoreCompileInputs.cache
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.AssemblyInfoInputs.cache
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.AssemblyInfo.cs
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.Tests.deps.json
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.Tests.runtimeconfig.json
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.Tests.runtimeconfig.dev.json
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.Tests.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.Tests.pdb
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/bin/Debug/netcoreapp2.2/FrequencyCalculator.pdb
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.csproj.CopyComplete
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.dll
+/Users/ruviru/Projects/FrequencyCalculator/FrequencyCalculator.Tests/obj/Debug/netcoreapp2.2/FrequencyCalculator.Tests.pdb
