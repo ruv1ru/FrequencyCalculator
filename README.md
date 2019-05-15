@@ -1,6 +1,9 @@
 # FrequencyCalculator
 
 
+Function that takes an array of integers, and returns an array of integers containing those integers which are most common in the input array.
+
+
 |                       Method |        Mean |      Error |     StdDev |
 |----------------------------- |------------:|-----------:|-----------:|
 |       BmGetMostCommonViaLinq |    10.21 ms |  0.1408 ms |  0.1317 ms |
